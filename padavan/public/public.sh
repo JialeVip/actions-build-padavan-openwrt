@@ -4,7 +4,7 @@
 
 user_name="admin"                        # 用户名 admin
 user_password=$user_name                 # 用户密码 admin
-lan_ip="192.168.3"                       # lan 地址 192.168.3.1 一定别写后面的 .1
+lan_ip="192.168.2"                       # lan 地址 192.168.2.1 一定别写后面的 .1
 wifi_password="1234567890"               # wifi密码，切记密码最少8位 admin
 version_time=$(date "+%Y%m%d")           # 自动时间更新时版本号: 20200320
 default_path="./user/shared/defaults.h"  # 默认文件配置目录
@@ -56,7 +56,7 @@ sed -i "/CONFIG_FIRMWARE_INCLUDE_WYYBIN/d" >> .config     # 删除配置项 网�
 ######################################################################
 
 # 科学
-echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config  # SS plus+
+echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >> .config  # SS plus+
 echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >> .config     # SS server
 
 #  代理
@@ -65,36 +65,36 @@ echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config       # srelay
 echo "CONFIG_FIRMWARE_INCLUDE_IPT2SOCKS=n" >> .config    # IPT2
 
 # 广告
-echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> .config       # adbyby plus+
+echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=n" >> .config       # adbyby plus+
 
 # DNS 有关
 echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >> .config # DNS-FORWARDER
-echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config     # smartdns
-echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=y" >> .config  # smartdns二进制文件
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=n" >> .config     # smartdns
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=n" >> .config  # smartdns二进制文件
 
 # 其他
 
-echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n" >> .config    # MENTOHUST 锐捷认证
-echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n" >> .config   # SCUT校园网客户端
+# echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n" >> .config    # MENTOHUST 锐捷认证
+# echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n" >> .config   # SCUT校园网客户端
 
 # Default
 
 ### Include OpenSSH instead of dropbear. openssl ~1.2MB, openssh ~1.0MB
-echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=n" >> .config
+# echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=n" >> .config
 
 ### Include dropbear SSH. ~0.3MB
-echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR=y" >> .config
+# echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR=n" >> .config
 
 ### Make the dropbear symmetrical ciphers and hashes faster. ~0.06MB
-echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR_FAST_CODE=y" >> .config
+# echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR_FAST_CODE=n" >> .config
 
 ### Include HTTPS support for DDNS client. openssl ~1.2MB
-echo "CONFIG_FIRMWARE_INCLUDE_DDNS_SSL=y" >> .config
+# echo "CONFIG_FIRMWARE_INCLUDE_DDNS_SSL=n" >> .config
 
 ### Include HTTPS support. openssl ~1.2MB
-echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> .config
+# echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> .config
 
 #网易云解锁
-echo "CONFIG_FIRMWARE_INCLUDE_WYY=y" >> .config
+# echo "CONFIG_FIRMWARE_INCLUDE_WYY=n" >> .config
 #网易云解锁GO版本执行文件（4M多）注意固件超大小
-echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >> .config
+# echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >> .config
