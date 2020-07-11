@@ -33,12 +33,6 @@
 - [Action 下载](https://github.com/HuaZhuangNan/actions-build-padavan-openwrt/actions)
 - [具体下载图示](./screenshots/readme.md)
 
-## 更新日志
-
-- [PSG1218](./logs/k2.md)
-- [NEWIFI3](./logs/n3.md)
-- [G-DOCK2.0](./logs/g-dock.md)
-
 ## 编译方法
 
 - 注：所有固件都是下载的，所以需要编译其他版本的yml去改连接和编译的配置就好
@@ -61,8 +55,6 @@ push:                     # push 操作
     - master              # 主分支
   # paths:                # 路径
   #   - padavan/*         # 监听padavan目录下所有文件的push操作
-  paths:                  # 路径
-    - logs/k2.md          # 监听logs目录下 k2.md 的push操作 (默认)
 ```
 
 ### 星标 `star` 编译
