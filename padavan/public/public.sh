@@ -56,21 +56,21 @@ sed -i "/CONFIG_FIRMWARE_INCLUDE_WYYBIN/d" >> .config     # 删除配置项 网�
 ######################################################################
 
 # 科学
-echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >> .config  # SS plus+
-echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >> .config     # SS server
+# echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >> .config  # SS plus+
+# echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >> .config     # SS server
 
 #  代理
-echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=n" >> .config      # TUNSAFE
-echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config       # srelay
-echo "CONFIG_FIRMWARE_INCLUDE_IPT2SOCKS=n" >> .config    # IPT2
+# echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=n" >> .config      # TUNSAFE
+# echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config       # srelay
+# echo "CONFIG_FIRMWARE_INCLUDE_IPT2SOCKS=n" >> .config    # IPT2
 
 # 广告
-echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=n" >> .config       # adbyby plus+
+# echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=n" >> .config       # adbyby plus+
 
 # DNS 有关
-echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >> .config # DNS-FORWARDER
-echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=n" >> .config     # smartdns
-echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=n" >> .config  # smartdns二进制文件
+# echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >> .config # DNS-FORWARDER
+# echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=n" >> .config     # smartdns
+# echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=n" >> .config  # smartdns二进制文件
 
 # 其他
 
