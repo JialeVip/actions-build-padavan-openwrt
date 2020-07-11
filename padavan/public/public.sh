@@ -92,7 +92,7 @@ sed -i "/CONFIG_FIRMWARE_INCLUDE_WYYBIN/d" >> .config     # 删除配置项 网�
 # echo "CONFIG_FIRMWARE_INCLUDE_DDNS_SSL=n" >> .config
 
 ### Include HTTPS support. openssl ~1.2MB
-# echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> .config
+echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> .config
 
 #网易云解锁
 # echo "CONFIG_FIRMWARE_INCLUDE_WYY=n" >> .config
